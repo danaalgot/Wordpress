@@ -1,16 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jabber</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <nav></nav>
-        <header></header>
-        <main></main>
-        <footer></footer>
-</body>
-</html>
+<!-- 
+    
+    This is the index template 
+
+-->
+
+<?php 
+    // This is a wordpress command that will call the default header
+    get_header();
+?>
+
+        <main>
+            <section>
+                <header>
+                    <h2>Content for Jabber</h2>
+                </header>
+            </section>
+        </main>
+        
+ <?php 
+    // This is a wordpress command that will call the default footer
+    get_footer();
+?>
