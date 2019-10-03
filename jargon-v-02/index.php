@@ -1,5 +1,5 @@
 <?php 
-
+        get_header();
 ?>
 
 
@@ -11,10 +11,10 @@
             </header>
 
         </section>
-        
+
 </main>
        
 
 <?php 
-    
+        get_footer();
 ?>
