@@ -18,5 +18,5 @@
             <h2>Site Navigation</h2>
         </nav>
         <header>
-            <h1>Jabber Header</h1>
+            <h1>Jargon Header</h1>
         </header>

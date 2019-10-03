@@ -12,7 +12,7 @@
         <main>
             <section>
                 <header>
-                    <h2>Content for Jabber</h2>
+                    <h2>Content for Jargon</h2>
                 </header>
             </section>
         </main>

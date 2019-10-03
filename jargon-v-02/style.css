@@ -1,5 +1,5 @@
 /*
-Theme Name: Jabber
+Theme Name: Jargon version 2.0
 Theme URI: https://dalgot.ca/dmit2032/labthree/
 Author: Dana Algot
 Author URI: https://dalgot.ca
@@ -7,12 +7,6 @@ Description: Basic setup of a wordpress theme, how to inclute site meta data and
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: jabber
-Tags: place, for, people, to, wake, up, early
+Text Domain: Jargon
+Tags:  
 */
-
-body {
-    background-color: lightblue;
-}
-
-
