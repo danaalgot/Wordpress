@@ -13,4 +13,11 @@ Tags:
 
 body {
     background: lightblue;
+    padding: 2rem;
+
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
 }
