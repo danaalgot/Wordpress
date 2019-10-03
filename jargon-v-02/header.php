@@ -8,9 +8,15 @@
     <?php       wp_head();          ?> 
 </head>
 <body>
-        <header>
-            <h1>Page Header</h1>
-            <nav>
+    <nav class="site-navigation">
+        <ul class="icon-view">
+            <li>Brand Image</li>
+            <li>Site Name</li>
+            <li>Menu Icon</li>
+        </ul>
 
-            </nav>
-        </header>
+    </nav>
+    <header class="main-page-header">
+        <h1 class="site-title">Jargon</h1>
+        <p>Company Tagline</p>
+    </header>
