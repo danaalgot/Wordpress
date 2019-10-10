@@ -55,3 +55,32 @@ In order to display a single post you have to create a template that will displa
 
 
 ```
+
+
+
+## Header.php File
+
+We have keep this file generic for every page. Each header for each page will look different. CWe need to call by using get_header then need to specify in the template parts directory what template header we want to use.
+
+1. Inside the header.php copy the code below. Pathing to the landing-page.php header that you create for the landing page of your site. 
+
+```php
+
+	if ( is_front_page()){
+		 get_template_part('template-parts/headers/landing' , 'page'); 
+		 // the  ,  works the same as just putting front-page.php
+      }
+
+```
+
+1. Alternitavly you can just add this to your front-page.php file instead of get_header(); but will have to have all the header code in that file. This is true for all templates.
+
+```php
+
+	if ( is_front_page()){
+		 get_template_part('template-parts/headers/landing' , 'page'); 
+      }
+
+```
+
+

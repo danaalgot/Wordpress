@@ -43,8 +43,32 @@ MAIN SITE NAVIGATION
   list-style-type: none;
 }
 
+.mobile-menu-icon {
+  width: 2rem;
+}
+
 /* 
 ---------------------------------------------------------------------------------------
 MAIN PAGE HEADER
 -------------------------------------------------------------------------------------
 */
+
+.main-page-header {
+  height: 30rem;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 3rem;
+  background: url(https://res.cloudinary.com/dalgot/image/upload/v1570719905/ahmed-sobah-Cbo4Bxx7SaA-unsplash_oybtuu.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
