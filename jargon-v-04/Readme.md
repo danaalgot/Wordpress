@@ -73,7 +73,7 @@ We have keep this file generic for every page. Each header for each page will lo
 
 ```
 
-1. Alternitavly you can just add this to your front-page.php file instead of get_header(); but will have to have all the header code in that file. This is true for all templates.
+2. Alternitavly you can just add this to your front-page.php file instead of get_header(); but will have to have all the header code in that file. This is true for all templates.
 
 ```php
 
