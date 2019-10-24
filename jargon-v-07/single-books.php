@@ -14,6 +14,31 @@
         <img src="<?php echo $header['header_image'];?>" alt="">
 </header>
 
+<main>
+
+<!-- Loop through the repearter field -->
+<?php 
+    if( have_rows ('section') ):
+        while( have_rows ('section') ): the_row();
+?>
+
+<div class="repeater">
+        <p><?php   the_sub_field('text');   ?></p>
+
+        <?php if(the_sub_field('support_image') !== " "){  ?>
+            <img src="<?php get_sub_field('support_image'); ?>" alt="">
+         <?php    }  ?>
+             
+</div>
+
+<?php 
+endwhile; 
+endif; 
+?>
+
+
+</main>
+
 <?php 
 
     get_footer();

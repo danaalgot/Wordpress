@@ -2,8 +2,7 @@
 
 if (!function_exists('jargon_setup')) {
     // wordpress functionality
-    function jargon_setup()
-    {
+    function jargon_setup(){
         add_theme_support('title_tag');
         
     }
