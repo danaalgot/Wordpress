@@ -1,14 +1,5 @@
 <!-- This is a header -->
-#   Wordpress Jabber Site
+#   Learning how to make themes in wordpress
 
-<!-- This is a list -->
-+ item
-+ item
-+ item
-
-<!-- This is a code block that will show the code. Must have the back ticks and the title -->
-` ` ` html
-
-<h1>Hello</h1>
-
-` ` ` `
+This repository has all the files created for learning various parts of wordpress. 
+It also has my custom wordpress theme that I am building. 
