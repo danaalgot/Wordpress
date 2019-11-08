@@ -1,0 +1,184 @@
+/*
+Theme Name: Hermit Crab Care
+Theme URI:  
+Author: Dana Algot
+Author URI: https://www.dalgot.ca
+Description:   Website on how to care for your hermit crabs
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI:  
+Text Domain: Hermit Crab Care
+Tags: hermit crabs, pets, care guide
+*/
+
+/********************************************************************************
+                            HEADER STYLES
+****************************************************************************************/ 
+
+body    {
+    height: 100%;
+
+
+     //--------------------------------SITE HEADER--------------------------------
+    .site-header  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(236, 224, 214);
+        border-bottom: 2px solid rgb(127, 109, 98);
+        
+        .logo   {
+            display: flex;
+            align-items: center;
+
+
+            h1  {
+                a{
+                    padding-left: 0.5rem;
+                    font-size: 2rem;
+                    color: black;
+                    text-decoration: none;
+                    padding-left: 1rem;
+                }
+            
+            }
+
+        }//----------LOGO DIV----------
+
+        .toggle-menu     {
+            display: none;
+        }
+
+        .menu-icon    {
+            margin-left: auto;
+            width: 3.7rem;
+            margin-right: 2rem;
+        }
+
+        .sign-up{
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1.6rem;
+            font-size: 1.4rem;
+            border-radius: 0.2rem;
+            background-color: rgb(127, 109, 98);
+        }
+
+        //--------------------------------SITE NAVIGATION--------------------------------
+        .site-navigation   {
+            
+            ul:hover{
+                transition: margin-right 4s 1s;
+            }
+
+            ul  {
+                list-style: none;
+                @media only screen and (max-width: 800px) {
+                        width: 60%;
+                        padding: 3rem 4rem;
+                        background-color: #2e2f30;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100vh;
+                }
+            
+                li    {    
+                            padding: 0.5rem ;
+                            padding-bottom: 1rem;
+                            margin-bottom: 2rem;
+                            border-bottom: 0.2rem solid rgb(196, 203, 209);
+                            width: 100%;
+                
+                    a   {
+                        color: #ffffff;
+                        text-decoration: none;
+                        display: block;
+                        line-height: 4rem;
+                        font-size: 1.6rem;
+                    }
+
+                   
+                    
+                }//----------LI----------
+            
+            }//----------UL----------
+
+        }//----------NAVIGATION----------
+
+
+    }//----------HEADER----------
+
+
+} //---------BODY----------
+
+
+@media only screen and (min-width: 800px) {
+    body{
+
+         //--------------------------------SITE HEADER--------------------------------
+        .site-header  {
+            background-color: rgb(236, 224, 214);
+
+             .sign-up:hover{
+                background-color: rgb(141, 205, 209);
+                color: black;
+             }
+
+             .menu-icon    {   
+                display: none;
+            }
+
+            .toggle-menu{
+                display: block;
+            }
+
+            //--------------------------------SITE NAVIGATION--------------------------------
+
+            .site-navigation{
+
+                
+                ul  {
+                    border: none;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 2rem;
+                    display: inline-block;
+
+                    li  {
+                        border: none;
+                        display: inline;
+                        padding: 1.4rem;
+
+                        a{
+                            color: #32363a;
+                            display: inline;
+                            padding-top: 1rem;
+                            font-size: 1.4rem;
+                        }
+
+                        a:visited{
+                            color: black;
+                        }
+
+                        a:hover{
+                            border-top: 2px solid rgb(71, 71, 71);
+                        }
+
+
+
+                    }
+                   
+                }//----------UL----------
+
+            }//----------NAVIGATION----------
+
+        }//----------HEADER----------
+
+    }//----------BODY----------
+
+}//----------MEDIA QUERY 800PX----------
+

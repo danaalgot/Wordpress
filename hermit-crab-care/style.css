@@ -1,0 +1,685 @@
+html {
+  font-size: 62.5%;
+  /*Our base font-size is 10px to make it easier to calculate rems*/
+}
+
+/*
+Theme Name: Hermit Crab Care
+Theme URI:  
+Author: Dana Algot
+Author URI: https://www.dalgot.ca
+Description:   All about how to care for your hermit crabs!
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI:  
+Text Domain: Hermit Crab Care
+Tags: hermit crabs, pets, care guide
+*/
+/********************************************************************************
+                            HEADER STYLES
+****************************************************************************************/
+body {
+  height: 100%;
+}
+
+body .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  background-color: #ece0d6;
+  border-bottom: 2px solid #7f6d62;
+}
+
+body .site-header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .site-header .logo h1 a {
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+body .site-header .toggle-menu {
+  display: none;
+}
+
+body .site-header .menu-icon {
+  margin-left: auto;
+  width: 3.7rem;
+  margin-right: 2rem;
+}
+
+body .site-header .sign-up {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1.6rem;
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+  background-color: #7f6d62;
+}
+
+body .site-header .site-navigation ul:hover {
+  -webkit-transition: margin-right 4s 1s;
+  transition: margin-right 4s 1s;
+}
+
+body .site-header .site-navigation ul {
+  list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+  body .site-header .site-navigation ul {
+    width: 60%;
+    padding: 3rem 4rem;
+    background-color: #2e2f30;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+}
+
+body .site-header .site-navigation ul li {
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.2rem solid #c4cbd1;
+  width: 100%;
+}
+
+body .site-header .site-navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  line-height: 4rem;
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 800px) {
+  body .site-header {
+    background-color: #ece0d6;
+  }
+  body .site-header .sign-up:hover {
+    background-color: #8dcdd1;
+    color: black;
+  }
+  body .site-header .menu-icon {
+    display: none;
+  }
+  body .site-header .toggle-menu {
+    display: block;
+  }
+  body .site-header .site-navigation ul {
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 2rem;
+    display: inline-block;
+  }
+  body .site-header .site-navigation ul li {
+    border: none;
+    display: inline;
+    padding: 1.4rem;
+  }
+  body .site-header .site-navigation ul li a {
+    color: #32363a;
+    display: inline;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+  }
+  body .site-header .site-navigation ul li a:visited {
+    color: black;
+  }
+  body .site-header .site-navigation ul li a:hover {
+    border-top: 2px solid #474747;
+  }
+}
+
+
+body h1 a {
+  font-family: 'Bad Script', cursive;
+}
+
+body a {
+  font-family: 'Raleway', sans-serif;
+  line-height: 2;
+}
+
+body p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+body .title-catch {
+  color: #7f6d62;
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+body h2 {
+  font-size: 4rem;
+  font-family: 'Bad Script', cursive;
+}
+
+@media only screen and (min-width: 500px) {
+  body h2 {
+    font-size: 5rem;
+  }
+}
+
+body h2 span {
+  border-bottom: 2px solid #82dae2;
+}
+
+body section h2 {
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 1400px) {
+  body .inner-container {
+    width: 140rem;
+    margin: 0 auto;
+  }
+}
+
+body section {
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  body section {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  body section {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body section {
+    padding: 0 4rem;
+  }
+}
+
+body .banner {
+  padding: 1rem;
+  text-align: center;
+  background: url(https://res.cloudinary.com/dalgot/image/upload/v1570719905/ahmed-sobah-Cbo4Bxx7SaA-unsplash_oybtuu.jpg);
+  background-size: cover;
+  height: 40rem;
+  background-position: center;
+  margin-bottom: 4rem;
+  padding-top: 6rem;
+}
+
+@media only screen and (min-width: 800px) {
+  body .banner {
+    background-size: cover;
+    height: 40rem;
+    margin-bottom: 7rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body .banner {
+    background-size: cover;
+    height: 50rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  body .banner {
+    background-size: cover;
+    height: 60rem;
+  }
+}
+
+body .banner h2 {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 4rem;
+  font-family: 'Bad Script', cursive;
+  line-height: 7rem;
+}
+
+@media only screen and (min-width: 700px) {
+  body .banner h2 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body .banner h2 {
+    margin-top: 8rem;
+    font-size: 7rem;
+    line-height: 9rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body .banner h2 {
+    margin-top: 10rem;
+  }
+}
+
+body .banner p {
+  margin-bottom: 3rem;
+}
+
+body .banner a {
+  text-decoration: none;
+  border: 1px solid white;
+  color: black;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border-radius: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.719);
+}
+
+body .banner a:hover {
+  background-color: white;
+}
+
+/********************************************************************************
+                            FEATURED ARTICLES STYLES
+****************************************************************************************/
+.articles {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .articles {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .articles .article-thumbnails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .articles .article-box {
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .articles .article-box {
+    width: 24%;
+  }
+}
+
+.articles .article-box {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  border: 2px solid #8dcdd1;
+}
+
+@media only screen and (min-width: 700px) {
+  .articles .article-box {
+    margin-bottom: 4rem;
+  }
+}
+
+.articles .article-box .article-content {
+  border: 2px solid #7f6d62;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  background-color: #ece0d6;
+  width: 100%;
+}
+
+.articles .article-box .article-content h3 {
+  font-size: 3rem;
+  font-family: 'Kalam', cursive;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+
+.articles .article-box .article-content p {
+  font-size: 1.6rem;
+  padding: 0 1rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.articles .article-box .article-content a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-decoration: none;
+  border-top: 2px solid #7f6d62;
+  color: white;
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  background-color: #7f6d62;
+}
+
+.articles .box-one {
+  background-color: #beebee;
+}
+
+/********************************************************************************
+                            SINGLE ARTICLES STYLES
+****************************************************************************************/
+.site-main {
+  padding-top: 5.2rem;
+}
+
+@media only screen and (max-width: 819px) {
+  .site-main h2 {
+    line-height: 1.5;
+  }
+}
+
+.site-main .article-header {
+  background-color: #beebee;
+  padding-top: 6rem;
+  margin-bottom: 5rem;
+  border-bottom: 2px solid #7f6d62;
+}
+
+@media only screen and (min-width: 700px) {
+  .site-main .article-header {
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.site-main .article-header img {
+  display: block;
+  border-radius: 30rem;
+  width: 30rem;
+  border: 4px solid #8dcdd1;
+}
+
+@media only screen and (max-width: 700px) {
+  .site-main .article-header img {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .site-main .article-header img {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .site-main .article-header .article-header-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .site-main .article-header .article-header-content {
+    margin-right: 4rem;
+  }
+}
+
+.site-main .article-header .article-header-content p {
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .site-main .article-body {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.site-main .article-body h3 {
+  font-size: 3.5rem;
+  font-family: 'Kalam', cursive;
+  margin-bottom: 3rem;
+  line-height: 2;
+}
+
+.site-main .article-body h3 span {
+  border-bottom: 2px solid #82dae2;
+}
+
+.site-main .article-body .article-flex {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .site-main .article-body .article-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.site-main .article-body .article-flex p {
+  max-width: 60rem;
+  margin-right: 4rem;
+}
+
+.site-main .article-body .article-flex img {
+  border: 4px solid #8dcdd1;
+}
+
+@media only screen and (min-width: 800px) {
+  .site-main .article-body .article-flex img {
+    width: 40rem;
+  }
+}
+
+/********************************************************************************
+                            FEATURED ARTICLES STYLES
+****************************************************************************************/
+.categories {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .categories .category-thumbnails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .categories .category-thumbnails .category {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .categories .category-thumbnails .category {
+    width: 32%;
+  }
+}
+
+.categories .category-thumbnails .category .category-content {
+  padding: 1rem;
+  background-color: #ece0d6;
+  border: 2px solid #7f6d62;
+  margin-bottom: 3rem;
+}
+
+.categories .category-thumbnails .category .category-content ul {
+  padding: 0.5em;
+  border: 2px solid #8dcdd1;
+  background-color: #beebee;
+}
+
+.categories .category-thumbnails .category .category-content ul li {
+  text-decoration: none;
+  padding: 1.2rem;
+}
+
+.categories .category-thumbnails .category .category-content ul li a {
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #7f6d62;
+  padding: 0.5rem;
+}
+
+.categories .category-thumbnails .category .category-content ul li a:hover {
+  border: 1px solid #7f6d62;
+}
+
+.categories .category-thumbnails .category h3 {
+  font-size: 4rem;
+  padding: 0.5rem 0;
+  font-family: 'Kalam', cursive;
+}
+
+/********************************************************************************
+                            SINGLE ARTICLES STYLES
+****************************************************************************************/
+footer {
+  background-color: #ece0d6;
+  border-top: 2px solid #7f6d62;
+}
+
+.footer-content {
+  width: 10rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.footer-content p, .footer-content a {
+  font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (min-width: 400px) {
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+    margin: 0 auto;
+    width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-content {
+    width: 60rem;
+  }
+}
+
+.footer-content .footer-links {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-content .footer-links {
+    width: 10rem;
+  }
+}
+
+.footer-content .footer-links h4 {
+  font-size: 2rem;
+  font-family: 'Kalam', cursive;
+  border-bottom: 2px solid #8dcdd1;
+  margin-bottom: 1rem;
+}
+
+.footer-content .footer-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.copy-write {
+  border-top: 1px solid #7f6d62;
+  margin: 1rem 1rem 0 1rem;
+  padding-bottom: 4rem;
+  padding: 1rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .copy-write {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.copy-write p {
+  color: #7f6d62;
+  font-size: 1rem;
+  max-width: 50rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.copy-write h4 {
+  font-size: 1.6rem;
+  color: #7f6d62;
+  margin-bottom: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+  .copy-write h4 {
+    margin-right: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,200 @@
+
+
+/********************************************************************************
+                            FEATURED ARTICLES STYLES
+****************************************************************************************/ 
+
+.articles{
+    margin-bottom: 5rem;
+
+    @media only screen and (min-width: 700px){
+        padding: 0 3rem;
+   }
+
+    @media only screen and (min-width: 800px){
+        .article-thumbnails{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+
+        .article-box{
+            width: 48%;
+            display: flex;
+        }
+
+    }
+
+    @media only screen and (min-width: 1100px){
+        .article-box{
+            width: 24%;
+        }
+
+    }
+
+       .article-box{
+           padding: 1rem;
+           margin-bottom: 2rem;
+           position: relative;
+           border: 2px solid rgb(141, 205, 209);
+        
+           @media only screen and (min-width: 700px){
+            margin-bottom: 4rem;
+           }
+
+        .article-content{
+            border: 2px solid rgb(127, 109, 98);
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            background-color: rgb(236, 224, 214);
+            width: 100%;
+            
+
+            h3 {
+                font-size: 3rem;
+                font-family: 'Kalam', cursive;
+                padding: 0 1rem;
+                margin-bottom: 1rem;
+                line-height: 4rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                padding: 0 1rem;
+                max-width: 40rem;
+                margin: 0 auto;
+                margin-bottom: 5rem;
+            }
+
+            a {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                 text-decoration: none;
+                 border-top: 2px solid rgb(127, 109, 98);
+                 color: white;
+                 padding: 0.6rem;
+                 font-size: 1.6rem;
+                 background-color: rgb(127, 109, 98);
+             }
+
+        }
+
+       }//ARTICLE BOX
+
+       .box-one{
+            background-color: rgb(190, 235, 238);
+            //background-color: rgb(130, 218, 226);
+       }
+
+  }
+
+
+
+  /********************************************************************************
+                            SINGLE ARTICLES STYLES
+****************************************************************************************/ 
+
+
+.site-main{
+    padding-top: 5.2rem;
+
+    @media only screen and (max-width: 819px){
+            h2 {
+                line-height: 1.5;
+            }
+        }
+
+    .article-header{    
+        background-color: rgb(190, 235, 238);
+        padding-top: 6rem;
+        margin-bottom: 5rem;
+        border-bottom: 2px solid rgb(127, 109, 98);
+
+        @media only screen and (min-width: 700px){
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            display: block;
+            border-radius: 30rem;
+            width: 30rem;
+            border: 4px solid rgb(141, 205, 209);
+            @media only screen and (max-width: 700px){
+                margin: 0 auto;
+                margin-bottom: 3rem;
+            }
+            @media only screen and (min-width: 700px){
+                width: 20rem;
+            }
+            
+        }
+
+        .article-header-content{
+            @media only screen and (max-width: 700px){
+                text-align: center;
+            }
+
+            @media only screen and (min-width: 700px){
+                margin-right: 4rem;
+            }   
+
+            p {
+                font-size: 2em;
+            }
+
+        }
+
+    }
+
+
+    .article-body{
+
+        @media only screen and (min-width: 1000px){
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            font-size: 3.5rem;
+            font-family: 'Kalam', cursive;
+            margin-bottom: 3rem;
+            line-height: 2;
+    
+            span{
+                border-bottom: 2px solid rgb(130, 218, 226);
+            }
+
+        }
+
+        .article-flex{
+            margin-bottom: 5rem;
+            @media only  screen and (min-width:800px) {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            p{
+                max-width: 60rem;
+                margin-right: 4rem;
+            }
+
+            img{
+                border: 4px solid rgb(141, 205, 209);
+                @media only  screen and (min-width:800px) {
+                    width: 40rem;
+                }
+    
+            }
+
+        }
+
+    } 
+
+}
