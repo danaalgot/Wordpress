@@ -2,10 +2,11 @@
  
 if (!function_exists('jargon_setup')) {
     // wordpress functionality
-    function jargon_setup(){
+    function jargon_setup()
+    {
       add_theme_support('title_tag');
+      add_theme_support('post-thumbnails');
       register_nav_menus(array('jargon-site' => __( 'Jargon Site Navigation' )));
-
     }
 }
 
@@ -22,10 +23,16 @@ function jargon_styles()
 add_action('wp_enqueue_scripts', 'jargon_styles');
  
 function jargon_scripts () {
-  wp_enqueue_script("jargon-mobile-menu",  get_template_directory_uri() . "/js/mobile-menu.js");
+    wp_enqueue_script("jargon-mobile-menu",  get_template_directory_uri() . "/js/mobile-menu.js");
 }
 
 add_action('wp_enqueue_scripts', 'jargon_scripts');
+
+add_image_size( 'square', '200', '200' );
+
+
+
+ 
 
 
 ?>

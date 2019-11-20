@@ -28,7 +28,6 @@
             <?php wp_nav_menu(array('menu' => 'Pages Menu', 'menu_class'=> 'list-view',));?>
        </li>
              
-    
          <!-- switch out the img src to the src of your mobile menu icon. -->
        <li id="mobile-menu-button" class="mobile-menu" >         
         <img class="mobile-menu-icon" src="https://dalgot.ca/dmit2032/labthree/wp-content/uploads/2019/10/bars.svg" alt="mobile menu icon"> 
